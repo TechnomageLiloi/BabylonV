@@ -4,7 +4,7 @@ Requests.Maps = {
         API.request('Maps.Show', {
             debug: false
         }, function (data) {
-            $('#layout').html(data.render);
+            $('#page').html(data.render);
         }, function () {
 
         });
@@ -15,7 +15,7 @@ Requests.Maps = {
         API.request('Maps.Edit', {
             key_day: key_day
         }, function (data) {
-            const wrap = $('#layout');
+            const wrap = $('#page');
             wrap.html(data.render);
             wrap.show();
         }, function () {

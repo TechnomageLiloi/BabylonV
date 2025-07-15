@@ -15,3 +15,12 @@ create table config
     constraint config_pk
         primary key (key_config)
 );
+
+create table maps
+(
+	key_map varchar(1000) not null,
+	program text null,
+	data json not null,
+	constraint maps_pk
+		primary key (key_map)
+);
