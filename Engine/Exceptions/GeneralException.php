@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS\Exceptions;
+namespace Liloi\BabylonV\Exceptions;
 
 use Liloi\Judex\ExtendedException;
 

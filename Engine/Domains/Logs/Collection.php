@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Logs;
+namespace Liloi\BabylonV\Domains\Logs;
 
 use Liloi\Tools\Collection as AbstractCollection;
 

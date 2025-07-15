@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS\Exceptions;
+namespace Liloi\BabylonV\Exceptions;
 
 class IncorrectException extends GeneralException
 {

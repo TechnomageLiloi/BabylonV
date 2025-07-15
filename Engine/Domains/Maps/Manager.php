@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Maps;
+namespace Liloi\BabylonV\Domains\Maps;
 
-use Liloi\TARDIS\Domains\Manager as DomainManager;
+use Liloi\BabylonV\Domains\Manager as DomainManager;
 
 class Manager extends DomainManager
 {

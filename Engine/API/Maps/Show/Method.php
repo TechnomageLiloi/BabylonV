@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\TARDIS\API\Maps\Show;
+namespace Liloi\BabylonV\API\Maps\Show;
 
-use Liloi\TARDIS\API\Method as SuperMethod;
-use Liloi\TARDIS\Domains\Maps\Manager as DiaryManager;
+use Liloi\BabylonV\API\Method as SuperMethod;
+use Liloi\BabylonV\Domains\Maps\Manager as DiaryManager;
 
 class Method extends SuperMethod
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Logs;
+namespace Liloi\BabylonV\Domains\Logs;
 
-use Liloi\TARDIS\Domains\Manager as DomainManager;
+use Liloi\BabylonV\Domains\Manager as DomainManager;
 
 /**
  * Question's manager.

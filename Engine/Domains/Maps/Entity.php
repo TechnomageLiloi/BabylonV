@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Maps;
+namespace Liloi\BabylonV\Domains\Maps;
 
 use Liloi\Stylo\Parser;
 use Liloi\Tools\Entity as AbstractEntity;
