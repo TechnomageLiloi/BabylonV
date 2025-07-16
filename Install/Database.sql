@@ -34,6 +34,8 @@ create table puzzles
     type tinyint unsigned default 1 not null,
     program json not null,
     theory text not null,
+    tags varchar(100) default '-' not null,
+    dt datetime not null,
     constraint puzzles_pk
         primary key (key_puzzle)
 );

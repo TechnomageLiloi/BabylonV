@@ -11,6 +11,7 @@
             <tr>
                 <th>Unique ID</th>
                 <th>Title</th>
+                <th>Tags</th>
                 <th>Status</th>
                 <th>Type</th>
                 <th>Actions</th>
@@ -22,6 +23,9 @@
                     </td>
                     <td>
                         <?php echo $entity->getTitle(); ?>
+                    </td>
+                    <td>
+                        <?php echo $entity->getTags(); ?>
                     </td>
                     <td>
                         <?php echo $entity->getStatusTitle(); ?>

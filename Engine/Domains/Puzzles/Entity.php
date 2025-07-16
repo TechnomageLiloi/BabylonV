@@ -23,6 +23,12 @@ use Liloi\BabylonV\Domains\Entity as AbstractEntity;
  *
  * @method string getTheory()
  * @method void setTheory(string $value)
+ *
+ * @method string getTags()
+ * @method void setTags(string $value)
+ *
+ * @method string getDt()
+ * @method void setDt(string $value)
  */
 class Entity extends AbstractEntity
 {

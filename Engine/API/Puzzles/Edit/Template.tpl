@@ -15,6 +15,12 @@
             </td>
         </tr>
         <tr>
+            <td>Tags</td>
+            <td>
+                <input name="tags" type="text" value="<?php echo $entity->getTags(); ?>" />
+            </td>
+        </tr>
+        <tr>
             <td>Program</td>
             <td>
                 <textarea name="program"><?php echo $entity->getProgram(); ?></textarea>

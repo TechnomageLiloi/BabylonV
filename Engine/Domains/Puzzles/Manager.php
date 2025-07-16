@@ -107,7 +107,9 @@ class Manager extends DomainManager
             'status' => Statuses::DEVELOP,
             'type' => Types::CARD,
             'program' => '{}',
-            'theory' => '-'
+            'theory' => '-',
+            'tags' => '-',
+            'dt' => date('Y-m-d H:i:s'),
         ];
 
         self::insert($name, $data);

@@ -47,7 +47,8 @@ Requests.Puzzles = {
             'program': jq_block.find('[name="program"]').val(),
             'status': jq_block.find('[name="status"]').val(),
             'type': jq_block.find('[name="type"]').val(),
-            'theory': jq_block.find('[name="theory"]').val()
+            'theory': jq_block.find('[name="theory"]').val(),
+            'tags': jq_block.find('[name="tags"]').val()
         }, function (data) {
             Requests.Puzzles.getCollection();
         }, function () {

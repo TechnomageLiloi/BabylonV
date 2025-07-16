@@ -16,6 +16,7 @@ class Method extends SuperMethod
         $puzzle->setStatus($_POST['parameters']['status']);
         $puzzle->setType($_POST['parameters']['type']);
         $puzzle->setTheory($_POST['parameters']['theory']);
+        $puzzle->setTags($_POST['parameters']['tags']);
 
         $puzzle->save();
 
