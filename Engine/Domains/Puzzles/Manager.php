@@ -23,7 +23,7 @@ class Manager extends DomainManager
         $name = self::getTableName();
 
         $rows = self::getAdapter()->getArray(sprintf(
-            'select * from %s order by key_puzzle desc;',
+            'select * from %s order by key_puzzle desc limit 100;',
             $name
         ));
 
@@ -102,6 +102,7 @@ class Manager extends DomainManager
     {
         $name = self::getTableName();
         $data = [
+            'id' => 'ID-' . date('Y-m-d-H-i-s'),
             'title' => '-',
             'status' => Statuses::DEVELOP,
             'type' => Types::CARD,

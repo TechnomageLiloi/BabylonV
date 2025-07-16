@@ -9,7 +9,7 @@
         <hr/>
         <table>
             <tr>
-                <th>level</th>
+                <th>Unique ID</th>
                 <th>Title</th>
                 <th>Status</th>
                 <th>Type</th>
@@ -18,7 +18,7 @@
             <?php foreach($collection as $entity): ?>
                 <tr style="font-weight: bold;" class="levels">
                     <td>
-                        <?php echo $entity->getID(); ?>
+                        <?php echo $entity->getId(); ?>
                     </td>
                     <td>
                         <?php echo $entity->getTitle(); ?>
