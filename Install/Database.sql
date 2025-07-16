@@ -24,3 +24,19 @@ create table maps
 	constraint maps_pk
 		primary key (key_map)
 );
+
+create table puzzles
+(
+    key_puzzle bigint unsigned not null auto_increment,
+    id varchar(100) not null,
+    title varchar(250) not null,
+    status tinyint unsigned default 1 not null,
+    type tinyint unsigned default 1 not null,
+    program json not null,
+    theory text not null,
+    constraint puzzles_pk
+        primary key (key_puzzle)
+);
+
+create unique index puzzles_id_uindex
+    on puzzles (id);

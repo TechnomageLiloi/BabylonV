@@ -6,6 +6,9 @@ use Liloi\Stylo\Parser as StyloParser;
 use Liloi\BabylonV\Domains\Entity as AbstractEntity;
 
 /**
+ * @method string getId()
+ * @method void setId(string $value)
+ *
  * @method string getTitle()
  * @method void setTitle(string $value)
  *
@@ -28,11 +31,6 @@ class Entity extends AbstractEntity
     public function getKey(): string
     {
         return $this->getField('key_puzzle');
-    }
-
-    public function getID(): string
-    {
-        return $this->getKey();
     }
 
     public function getStatusTitle(): string
