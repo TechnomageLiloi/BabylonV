@@ -11,6 +11,7 @@
         <script><?php echo file_get_contents(dirname(__DIR__) . '/Engine/API/Maps/Requests.js'); ?></script>
         <script><?php echo file_get_contents(dirname(__DIR__) . '/Engine/API/Puzzles/Requests.js'); ?></script>
         <script><?php echo file_get_contents(dirname(__DIR__) . '/Engine/API/Puzzles/Testing.js'); ?></script>
+        <script><?php echo file_get_contents(dirname(__DIR__) . '/Engine/API/Levels/Requests.js'); ?></script>
 
         <style><?php echo file_get_contents(__DIR__ . '/Style.css'); ?></style>
 
@@ -18,6 +19,7 @@
     </head>
     <body>
         <div style="text-align: center;">
+            <a href="javascript:void(0)" class="butn" onclick="Requests.Levels.getCollection();">Levels</a>
             <a class="butn" href="javascript:void(0)" onclick="Requests.Puzzles.getCollection();">Puzzles</a>
         </div>
         <hr/>
