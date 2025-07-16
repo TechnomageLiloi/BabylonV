@@ -1,14 +1,11 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Exercises;
+namespace Liloi\BabylonV\Domains\Puzzles;
 
 use Liloi\Stylo\Parser as StyloParser;
 use Liloi\BabylonV\Domains\Entity as AbstractEntity;
 
 /**
- * @method string getMap()
- * @method void setMap(string $value)
- *
  * @method string getTitle()
  * @method void setTitle(string $value)
  *
@@ -30,12 +27,12 @@ class Entity extends AbstractEntity
 
     public function getKey(): string
     {
-        return $this->getField('key_exercise');
+        return $this->getField('key_puzzle');
     }
 
     public function getID(): string
     {
-        return 'exercise' . strtolower(str_replace(':', '-', $this->getMap())) . '-' . $this->getKey();
+        return $this->getKey();
     }
 
     public function getStatusTitle(): string

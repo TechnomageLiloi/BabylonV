@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Exercises;
+namespace Liloi\BabylonV\Domains\Puzzles;
 
 use Liloi\BabylonV\Domains\Manager as DomainManager;
 use Liloi\BabylonV\Domains\Maps\Manager as MapsManager;
@@ -15,7 +15,7 @@ class Manager extends DomainManager
      */
     public static function getTableName(): string
     {
-        return self::getTablePrefix() . 'exercises';
+        return self::getTablePrefix() . 'puzzles';
     }
 
     public static function loadCollection(): Collection
@@ -23,15 +23,15 @@ class Manager extends DomainManager
         $name = self::getTableName();
 
         $rows = self::getAdapter()->getArray(sprintf(
-            'select * from %s where map="%s" order by key_exercise desc;',
-            $name, MapsManager::getMapID()
+            'select * from %s order by key_puzzle desc;',
+            $name
         ));
 
         $collection = new Collection();
 
         foreach($rows as $row)
         {
-            $collection[$row['key_exercise']] = Entity::create($row);
+            $collection[$row['key_puzzle']] = Entity::create($row);
         }
 
         return $collection;
@@ -48,8 +48,8 @@ class Manager extends DomainManager
         $name = self::getTableName();
 
         $row = self::getAdapter()->getRow(sprintf(
-            'select * from %s where map="%s" and key_exercise="%s"',
-            $name, MapsManager::getMapID(), $keyQuest
+            'select * from %s where key_puzzle="%s"',
+            $name, $keyQuest
         ));
 
         if(empty($row))
@@ -70,7 +70,7 @@ class Manager extends DomainManager
         $name = self::getTableName();
 
         $row = self::getAdapter()->getRow(sprintf(
-            'select * from %s order by key_exercise desc limit 1', $name
+            'select * from %s order by key_puzzle desc limit 1', $name
         ));
 
         return Entity::create($row);
@@ -86,30 +86,13 @@ class Manager extends DomainManager
         $name = self::getTableName();
         $data = $entity->get();
 
-        $keyQuest = $data['key_exercise'];
+        $keyQuest = $data['key_puzzle'];
 
         self::update(
             $name,
             $data,
-            sprintf('key_exercise = "%s" and map="%s"', $keyQuest, MapsManager::getMapID())
+            sprintf('key_puzzle = "%s"', $keyQuest)
         );
-    }
-
-    /**
-     * Load next key.
-     *
-     * @return int
-     */
-    public static function getNextKey(): int
-    {
-        $name = self::getTableName();
-
-        $key = (int)self::getAdapter()->getSingle(sprintf(
-            'select key_exercise from %s where map="%s" order by key_exercise desc limit 1',
-            $name, MapsManager::getMapID()
-        ));
-
-        return ++$key;
     }
 
     /**
@@ -119,8 +102,6 @@ class Manager extends DomainManager
     {
         $name = self::getTableName();
         $data = [
-            'key_exercise' => self::getNextKey(),
-            'map' => MapsManager::getMapID(),
             'title' => '-',
             'status' => Statuses::DEVELOP,
             'type' => Types::CARD,

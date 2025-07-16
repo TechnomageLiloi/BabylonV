@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Exercises;
+namespace Liloi\BabylonV\Domains\Puzzles;
 /**
  * Class Statuses.
- * @package Liloi\BabylonV\Domains\Exercises
+ * @package Liloi\BabylonV\Domains\Puzzles
  */
 class Statuses
 {

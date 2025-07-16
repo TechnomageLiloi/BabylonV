@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Exercises;
+namespace Liloi\BabylonV\Domains\Puzzles;
 
 class Types
 {
