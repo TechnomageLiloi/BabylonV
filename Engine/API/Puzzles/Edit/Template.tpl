@@ -35,13 +35,21 @@
         <tr>
             <td>Status</td>
             <td>
-                <input name="status" type="text" value="<?php echo $entity->getStatus(); ?>" />
+                <select name="status">
+                    <?php foreach($statuses as $key => $value): ?>
+                        <option value="<?php echo $key; ?>" <?php if($entity->getStatus() == $key): ?>selected="selected"<?php endif; ?>><?php echo $value; ?></option>
+                    <?php endforeach; ?>
+                </select>
             </td>
         </tr>
         <tr>
             <td>Type</td>
             <td>
-                <input name="type" type="text" value="<?php echo $entity->getType(); ?>" />
+                <select name="type">
+                    <?php foreach($types as $key => $value): ?>
+                        <option value="<?php echo $key; ?>" <?php if($entity->getType() == $key): ?>selected="selected"<?php endif; ?>><?php echo $value; ?></option>
+                    <?php endforeach; ?>
+                </select>
             </td>
         </tr>
         <tr>
