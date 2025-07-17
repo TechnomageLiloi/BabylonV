@@ -133,7 +133,13 @@ class Entity extends AbstractEntity
         return Manager::render(__DIR__ . '/Templates/General.tpl', [
             'render' => Manager::render(__DIR__ . '/Templates/' . Types::$list[$this->getType()] . '.tpl', [
                 'entity' => $this
-            ])
+            ]),
+            'entity' => $this
         ]);
+    }
+
+    public function parseTheory(): string
+    {
+        return StyloParser::parseString($this->getTheory());
     }
 }
