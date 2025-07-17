@@ -5,12 +5,10 @@ namespace Liloi\BabylonV\Domains\Logs;
 use Liloi\Tools\Collection as AbstractCollection;
 
 /**
- * @todo: add tests
- * Question's collection.
+ * Collection of logs.
  *
- * @package Engine\Domain\Exercise
+ * @package Liloi\BabylonV\Domains\Logs
  */
 class Collection extends AbstractCollection
 {
-
 }

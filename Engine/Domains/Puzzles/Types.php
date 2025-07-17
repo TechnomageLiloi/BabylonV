@@ -2,8 +2,16 @@
 
 namespace Liloi\BabylonV\Domains\Puzzles;
 
+/**
+ * Puzzle types.
+ *
+ * @package Liloi\BabylonV\Domains\Puzzles
+ */
 class Types
 {
+    /**
+     * Card: question and answer at both sides of card.
+     */
     public const CARD = 1;
 
     /**

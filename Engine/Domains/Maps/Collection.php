@@ -5,9 +5,10 @@ namespace Liloi\BabylonV\Domains\Maps;
 use Liloi\Tools\Collection as AbstractCollection;
 
 /**
- * Dissertation collection.
+ * Collection of maps.
+ *
+ * @package Liloi\BabylonV\Domains\Maps
  */
 class Collection extends AbstractCollection
 {
-
 }

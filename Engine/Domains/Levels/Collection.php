@@ -5,7 +5,9 @@ namespace Liloi\BabylonV\Domains\Levels;
 use Liloi\Tools\Collection as AbstractCollection;
 
 /**
- * @package Engine\Domain\Exercise
+ * Collection of levels.
+ *
+ * @package Liloi\BabylonV\Domains\Levels
  */
 class Collection extends AbstractCollection
 {
