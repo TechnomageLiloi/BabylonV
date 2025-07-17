@@ -2,15 +2,25 @@
 
 namespace Liloi\BabylonV;
 
-use Rune\Application\General as GeneralApplication;
+use Liloi\BabylonV\API\Method;
 use Liloi\BabylonV\Domains\Manager as DomainsManager;
+use Liloi\BabylonV\Exceptions\NotFoundException;
 use Liloi\Config\Pool;
 use Liloi\Config\Sparkle;
-use Liloi\BabylonV\Exceptions\NotFoundException;
-use Liloi\BabylonV\API\Method;
+use Rune\Application\General as GeneralApplication;
 
+/**
+ * Babylon V Application
+ *
+ * @package Liloi\BabylonV
+ */
 class Application extends GeneralApplication
 {
+    /**
+     * Application constructor.
+     *
+     * @param array $config
+     */
     public function __construct(array $config)
     {
         parent::__construct($config);
@@ -22,6 +32,12 @@ class Application extends GeneralApplication
         Method::setConfig($config);
     }
 
+    /**
+     * Compiles templates.
+     *
+     * @return string
+     * @throws \Exception
+     */
     public function compile(): string
     {
         if(isset($_POST['method']))
@@ -61,14 +77,5 @@ class Application extends GeneralApplication
         }
 
         throw new NotFoundException('No API method.');
-    }
-
-    public function apiLayout(): array
-    {
-        return [
-            'render' => $this->render(__DIR__ . '/API/Layout.tpl', [
-                'config' => $this->getConfig()
-            ]),
-        ];
     }
 }
