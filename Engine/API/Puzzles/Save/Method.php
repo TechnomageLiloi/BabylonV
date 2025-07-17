@@ -11,6 +11,7 @@ class Method extends SuperMethod
     {
         $puzzle = PuzzlesManager::load($_POST['parameters']['key_puzzle']);
 
+        $puzzle->setId($_POST['parameters']['id']);
         $puzzle->setTitle($_POST['parameters']['title']);
         $puzzle->setProgram($_POST['parameters']['program']);
         $puzzle->setStatus($_POST['parameters']['status']);

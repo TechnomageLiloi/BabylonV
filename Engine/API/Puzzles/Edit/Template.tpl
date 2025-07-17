@@ -9,6 +9,12 @@
             <th>Value</th>
         </tr>
         <tr>
+            <td>Unique ID</td>
+            <td>
+                <input name="id" type="text" value="<?php echo $entity->getId(); ?>" />
+            </td>
+        </tr>
+        <tr>
             <td>Title</td>
             <td>
                 <input name="title" type="text" value="<?php echo $entity->getTitle(); ?>" />

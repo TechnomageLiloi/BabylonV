@@ -43,6 +43,7 @@ Requests.Puzzles = {
 
         API.request('Puzzles.Save', {
             'key_puzzle': key_puzzle,
+            'id': jq_block.find('[name="id"]').val(),
             'title': jq_block.find('[name="title"]').val(),
             'program': jq_block.find('[name="program"]').val(),
             'status': jq_block.find('[name="status"]').val(),
