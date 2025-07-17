@@ -7,6 +7,9 @@ use Liloi\BabylonV\Domains\Maps\Manager as DiaryManager;
 
 class Method extends SuperMethod
 {
+    /**
+     * @inheritDoc
+     */
     public function execute(): array
     {
         $entity = DiaryManager::load($_POST['parameters']['key_day']);

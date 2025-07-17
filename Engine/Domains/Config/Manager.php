@@ -4,13 +4,29 @@ namespace Liloi\BabylonV\Domains\Config;
 
 use Liloi\BabylonV\Domains\Manager as DomainManager;
 
+/**
+ * Config manager.
+ *
+ * @package Liloi\BabylonV\Domains\Config
+ */
 class Manager extends DomainManager
 {
+    /**
+     * Gets database table name.
+     *
+     * @return string
+     */
     public static function getTableName(): string
     {
         return self::getTablePrefix() . 'config';
     }
 
+    /**
+     * Loads config from database table.
+     *
+     * @param string $key
+     * @return Entity
+     */
     public static function load(string $key): Entity
     {
         $name = self::getTableName();
@@ -36,14 +52,16 @@ class Manager extends DomainManager
         return Entity::create($row);
     }
 
+    /**
+     * Saves config to database table.
+     *
+     * @param Entity $entity
+     */
     public static function save(Entity $entity): void
     {
         $name = self::getTableName();
         $data = $entity->get();
-
-        // @todo: Get param name from const.
         $key = $data['key_config'];
-//        unset($data['key_config']);
 
         self::update(
             $name,
@@ -52,7 +70,11 @@ class Manager extends DomainManager
         );
     }
 
-    // @todo: rise this method to more abstract level.
+    /**
+     * Creates config tuple.
+     *
+     * @param $row
+     */
     public static function create($row): void
     {
         $name = self::getTableName();

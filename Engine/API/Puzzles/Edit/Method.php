@@ -9,6 +9,9 @@ use Liloi\BabylonV\Domains\Puzzles\Types as PuzzlesTypes;
 
 class Method extends SuperMethod
 {
+    /**
+     * @inheritDoc
+     */
     public function execute(): array
     {
         $entity = PuzzlesManager::load($_POST['parameters']['key_puzzle']);

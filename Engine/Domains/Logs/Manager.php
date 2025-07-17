@@ -12,7 +12,7 @@ use Liloi\BabylonV\Domains\Manager as DomainManager;
 class Manager extends DomainManager
 {
     /**
-     * Get table name.
+     * Gets database table name.
      *
      * @return string
      */

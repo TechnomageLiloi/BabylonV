@@ -5,12 +5,11 @@ namespace Liloi\BabylonV\API\Puzzles\Collection;
 use Liloi\BabylonV\Domains\Puzzles\Manager as PuzzlesManager;
 use Liloi\BabylonV\API\Method as AbstractMethod;
 
-/**
- * Rune API: Blueprint.Blueprints.Show
- * @package Liloi\Librarium\API\Blueprints\Show
- */
 class Method extends AbstractMethod
 {
+    /**
+     * @inheritDoc
+     */
     public function execute(): array
     {
         $collection = PuzzlesManager::loadCollection();

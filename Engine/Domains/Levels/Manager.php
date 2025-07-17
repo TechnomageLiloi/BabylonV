@@ -7,7 +7,7 @@ use Liloi\BabylonV\Domains\Manager as DomainManager;
 class Manager extends DomainManager
 {
     /**
-     * Get table name.
+     * Gets database table name.
      *
      * @return string
      */
@@ -16,6 +16,11 @@ class Manager extends DomainManager
         return self::getTablePrefix() . 'levels';
     }
 
+    /**
+     * Gets list of levels.
+     *
+     * @return Collection
+     */
     public static function loadCollection(): Collection
     {
         $name = self::getTableName();
@@ -35,6 +40,12 @@ class Manager extends DomainManager
         return $collection;
     }
 
+    /**
+     * Loads level from database.
+     *
+     * @param string $key
+     * @return Entity
+     */
     public static function load(string $key): Entity
     {
         $name = self::getTableName();
@@ -48,6 +59,11 @@ class Manager extends DomainManager
         return Entity::create($row);
     }
 
+    /**
+     * Saves level to database.
+     *
+     * @param Entity $entity
+     */
     public static function save(Entity $entity): void
     {
         $name = self::getTableName();
@@ -64,7 +80,9 @@ class Manager extends DomainManager
         );
     }
 
-    // @todo: rise this method to more abstract level.
+    /**
+     * Creates level default params at database.
+     */
     public static function create(): void
     {
         $name = self::getTableName();

@@ -7,6 +7,9 @@ use Liloi\BabylonV\API\Method as AbstractMethod;
 
 class Method extends AbstractMethod
 {
+    /**
+     * @inheritDoc
+     */
     public function execute(): array
     {
         Manager::create();

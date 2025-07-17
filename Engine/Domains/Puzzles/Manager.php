@@ -9,7 +9,7 @@ use Liloi\BabylonV\Exceptions\NotFoundException;
 class Manager extends DomainManager
 {
     /**
-     * Get table name.
+     * Gets database table name.
      *
      * @return string
      */

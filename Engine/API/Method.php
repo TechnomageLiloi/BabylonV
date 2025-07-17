@@ -8,8 +8,6 @@ abstract class Method
 
     public function render(string $template, array $data = []): string
     {
-        // @todo: assert filename
-
         extract($data);
 
         ob_start();
@@ -29,5 +27,10 @@ abstract class Method
         self::$config = $config;
     }
 
+    /**
+     * Executes API method.
+     *
+     * @return array
+     */
     abstract public function execute(): array;
 }
