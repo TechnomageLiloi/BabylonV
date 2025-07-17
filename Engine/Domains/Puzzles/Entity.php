@@ -130,8 +130,10 @@ class Entity extends AbstractEntity
 
     public function render(): string
     {
-        return Manager::render(__DIR__ . '/Templates/' . Types::$list[$this->getType()] . '.tpl', [
-            'entity' => $this
+        return Manager::render(__DIR__ . '/Templates/General.tpl', [
+            'render' => Manager::render(__DIR__ . '/Templates/' . Types::$list[$this->getType()] . '.tpl', [
+                'entity' => $this
+            ])
         ]);
     }
 }
