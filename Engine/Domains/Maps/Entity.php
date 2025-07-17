@@ -6,7 +6,7 @@ use Liloi\Stylo\Parser;
 use Liloi\Tools\Entity as AbstractEntity;
 
 /**
- * Dissertation entity.
+ * Map entity.
  *
  * @method string getProgram()
  * @method void setProgram(string $value)
@@ -17,7 +17,7 @@ use Liloi\Tools\Entity as AbstractEntity;
 class Entity extends AbstractEntity
 {
     /**
-     * Gets UID.
+     * Gets `key_map` param.
      *
      * @return string
      */
@@ -47,7 +47,7 @@ class Entity extends AbstractEntity
     }
 
     /**
-     * Saves dissertation.
+     * Saves map.
      */
     public function save(): void
     {

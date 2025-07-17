@@ -6,6 +6,8 @@ use Liloi\Tools\Entity as AbstractEntity;
 use Liloi\Stylo\Parser;
 
 /**
+ * Log entity.
+ *
  * @method string getTs()
  * @method void setTs(string $value)
  *
@@ -17,13 +19,18 @@ use Liloi\Stylo\Parser;
  */
 class Entity extends AbstractEntity
 {
+    /**
+     * Gets `key_log` param.
+     *
+     * @return string
+     */
     public function getKey(): string
     {
         return $this->getField('key_log');
     }
 
     /**
-     * Save question to database.
+     * Save log to database.
      */
     public function save(): void
     {

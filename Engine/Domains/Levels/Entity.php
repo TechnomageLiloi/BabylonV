@@ -6,6 +6,8 @@ use Liloi\Tools\Entity as AbstractEntity;
 use Liloi\Stylo\Parser;
 
 /**
+ * Level entity.
+ *
  * @method string getTitle()
  * @method void setTitle(string $value)
  *
@@ -20,28 +22,60 @@ use Liloi\Stylo\Parser;
  */
 class Entity extends AbstractEntity
 {
+    /**
+     * Gets `key_level` param.
+     *
+     * @return string
+     */
     public function getKey(): string
     {
         return $this->getField('key_level');
     }
 
+    /**
+     * Save level.
+     */
     public function save(): void
     {
         Manager::save($this);
     }
 
+    /**
+     * Gets title of status.
+     *
+     * @return string
+     */
     public function getStatusTitle(): string
     {
         return Statuses::$list[$this->getStatus()];
     }
 
+    /**
+     * Gets `HTML` class.
+     *
+     * @return string
+     */
     public function getStatusClass(): string
     {
         return strtolower(str_replace(' ', '-', $this->getStatusTitle()));
     }
 
-    public function getProgramParse(): string
+    /**
+     * Parse program parameter with Stylo.
+     *
+     * @return string
+     */
+    public function parseProgram(): string
     {
         return Parser::parseString($this->getProgram());
+    }
+
+    /**
+     * @deprecated
+     * @return string
+     */
+    public function getProgramParse(): string
+    {
+        return $this->parseProgram();
     }
 }

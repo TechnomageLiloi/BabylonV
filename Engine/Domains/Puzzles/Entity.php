@@ -6,6 +6,8 @@ use Liloi\Stylo\Parser as StyloParser;
 use Liloi\BabylonV\Domains\Entity as AbstractEntity;
 
 /**
+ * Puzzle entity.
+ *
  * @method string getId()
  * @method void setId(string $value)
  *
@@ -34,26 +36,49 @@ class Entity extends AbstractEntity
 {
     private array $program = [];
 
+    /**
+     * Gets `key_puzzle` param.
+     *
+     * @return string
+     */
     public function getKey(): string
     {
         return $this->getField('key_puzzle');
     }
 
+    /**
+     * Gets title of status.
+     *
+     * @return string
+     */
     public function getStatusTitle(): string
     {
         return Statuses::$list[$this->getStatus()];
     }
 
+    /**
+     * Gets title of type.
+     *
+     * @return string
+     */
     public function getTypeTitle(): string
     {
         return Types::$list[$this->getType()];
     }
 
+    /**
+     * Save puzzle.
+     */
     public function save(): void
     {
         Manager::save($this);
     }
 
+    /**
+     * Gets JSON program list as array.
+     *
+     * @return array
+     */
     public function getProgramList(): array
     {
         if(empty($this->program))
@@ -64,8 +89,11 @@ class Entity extends AbstractEntity
         return $this->program;
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+    /**
+     * Parse question.
+     *
+     * @return string
+     */
     public function parseQuestion(): string
     {
         $program = $this->getProgramList();
@@ -78,6 +106,11 @@ class Entity extends AbstractEntity
         return $program['question'];
     }
 
+    /**
+     * Parse one answer.
+     *
+     * @return string
+     */
     public function parseAnswer(): string
     {
         $program = $this->getProgramList();
@@ -90,6 +123,11 @@ class Entity extends AbstractEntity
         return $program['answer'];
     }
 
+    /**
+     * Parse >=1 answers.
+     *
+     * @return \string[][]
+     */
     public function parseAnswers(): array
     {
         $program = $this->getProgramList();
@@ -105,6 +143,11 @@ class Entity extends AbstractEntity
         return $program['answers'];
     }
 
+    /**
+     * Parse sentence.
+     *
+     * @return string[]
+     */
     public function parseSentence(): array
     {
         $program = $this->getProgramList();
@@ -122,12 +165,22 @@ class Entity extends AbstractEntity
         return $program['sentence'];
     }
 
+    /**
+     * Gets video URL.
+     *
+     * @return string
+     */
     public function getVideo(): string
     {
         $program = $this->getProgramList();
         return $program['video'];
     }
 
+    /**
+     * Render puzzle.
+     *
+     * @return string
+     */
     public function render(): string
     {
         return Manager::render(__DIR__ . '/Templates/General.tpl', [
@@ -138,6 +191,11 @@ class Entity extends AbstractEntity
         ]);
     }
 
+    /**
+     * Parse theory with Stylo.
+     *
+     * @return string
+     */
     public function parseTheory(): string
     {
         return StyloParser::parseString($this->getTheory());

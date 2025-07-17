@@ -3,8 +3,12 @@
 namespace Liloi\BabylonV\Domains;
 
 use Liloi\Tools\Entity as AbstractEntity;
-use Liloi\Stylo\Parser as StyloParser;
 
+/**
+ * Abstract entity.
+ *
+ * @package Liloi\BabylonV\Domains
+ */
 class Entity extends AbstractEntity
 {
 

@@ -3,34 +3,57 @@
 namespace Liloi\BabylonV\Domains\Config;
 
 use Liloi\Tools\Entity as AbstractEntity;
-use Liloi\Stylo\Parser;
 
 /**
- * @todo: add tests
+ * Config entity.
+ *
+ * @package Liloi\BabylonV\Domains\Config
  */
 class Entity extends AbstractEntity
 {
+    /**
+     * Gets `key_config` param.
+     *
+     * @return string
+     */
     public function getKey(): string
     {
         return $this->getField('key_config');
     }
 
+    /**
+     * @deprecated
+     * @return string
+     */
     public function getData(): string
     {
         return $this->getField('data');
     }
 
+    /**
+     * @deprecated
+     * @param string $value
+     */
     public function setData(string $value): void
     {
-        // @todo Extract param names to const.
         $this->data['data'] = $value;
     }
 
+    /**
+     * Gets data list.
+     *
+     * @return array
+     */
     public function getDataList(): array
     {
         return json_decode($this->getData(), true);
     }
 
+    /**
+     * Gets value as string.
+     *
+     * @return string|null
+     */
     public function getString(): ?string
     {
         $data = $this->getDataList();
@@ -43,6 +66,12 @@ class Entity extends AbstractEntity
         return $data['value'];
     }
 
+    /**
+     * Sets value as string.
+     *
+     * @param string $value
+     * @return $this
+     */
     public function setString(string $value): self
     {
         $data = $this->getDataList();
@@ -52,11 +81,19 @@ class Entity extends AbstractEntity
         return $this;
     }
 
+    /**
+     * Sets data list.
+     *
+     * @param array $value
+     */
     public function setDataList(array $value): void
     {
         $this->setData(json_encode($value, JSON_UNESCAPED_UNICODE));
     }
 
+    /**
+     * Save config.
+     */
     public function save(): void
     {
         Manager::save($this);
