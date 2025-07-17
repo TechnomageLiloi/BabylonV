@@ -2,6 +2,11 @@
 
 namespace Liloi\BabylonV\Exceptions;
 
+/**
+ * Access denied exception.
+ *
+ * @package Liloi\BabylonV\Exceptions
+ */
 class AccessException extends GeneralException
 {
     /**

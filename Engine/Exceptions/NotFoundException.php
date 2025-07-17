@@ -2,6 +2,11 @@
 
 namespace Liloi\BabylonV\Exceptions;
 
+/**
+ * Not found exception.
+ *
+ * @package Liloi\BabylonV\Exceptions
+ */
 class NotFoundException extends GeneralException
 {
     /**

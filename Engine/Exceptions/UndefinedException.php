@@ -2,6 +2,11 @@
 
 namespace Liloi\BabylonV\Exceptions;
 
+/**
+ * Undefined exception.
+ *
+ * @package Liloi\BabylonV\Exceptions
+ */
 class UndefinedException extends GeneralException
 {
     /**

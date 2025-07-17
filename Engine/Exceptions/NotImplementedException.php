@@ -2,6 +2,11 @@
 
 namespace Liloi\BabylonV\Exceptions;
 
+/**
+ * Not implemented exception
+ *
+ * @package Liloi\BabylonV\Exceptions
+ */
 class NotImplementedException extends GeneralException
 {
     /**

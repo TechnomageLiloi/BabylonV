@@ -2,6 +2,11 @@
 
 namespace Liloi\BabylonV\Exceptions;
 
+/**
+ * Incorrect param exception.
+ *
+ * @package Liloi\BabylonV\Exceptions
+ */
 class IncorrectException extends GeneralException
 {
     /**
@@ -9,7 +14,7 @@ class IncorrectException extends GeneralException
      *
      * @var string
      */
-    protected $defaultMessage = 'Incorrect RID exception.';
+    protected $defaultMessage = 'Incorrect param exception.';
 
     /**
      * Exception code.

@@ -16,7 +16,7 @@ class GeneralException extends ExtendedException
      *
      * @var string
      */
-    protected $defaultMessage = 'General Rune exception.';
+    protected $defaultMessage = 'General Babylon V exception.';
 
     /**
      * Exception code.
