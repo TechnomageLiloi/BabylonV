@@ -55,3 +55,14 @@ create table levels
 );
 
 insert into levels VALUES (1, 'Padawan', 1, '-', '-');
+
+create table milestones
+(
+    key_milestone bigint unsigned auto_increment,
+    program text not null,
+    data json not null,
+    constraint milestones_pk
+        primary key (key_milestone)
+);
+
+insert into milestones VALUES (1, 'Start milestone', '{}');
