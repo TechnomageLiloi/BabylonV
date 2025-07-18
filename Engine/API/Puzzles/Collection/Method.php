@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\BabylonV\API\Puzzles\Collection;
+namespace Liloi\TARDIS\API\Puzzles\Collection;
 
-use Liloi\BabylonV\Domains\Puzzles\Manager as PuzzlesManager;
-use Liloi\BabylonV\API\Method as AbstractMethod;
+use Liloi\TARDIS\Domains\Puzzles\Manager as PuzzlesManager;
+use Liloi\TARDIS\API\Method as AbstractMethod;
 
 class Method extends AbstractMethod
 {

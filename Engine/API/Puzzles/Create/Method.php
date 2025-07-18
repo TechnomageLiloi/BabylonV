@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\BabylonV\API\Puzzles\Create;
+namespace Liloi\TARDIS\API\Puzzles\Create;
 
-use Liloi\BabylonV\API\Method as SuperMethod;
-use Liloi\BabylonV\Domains\Puzzles\Manager as PuzzlesManager;
+use Liloi\TARDIS\API\Method as SuperMethod;
+use Liloi\TARDIS\Domains\Puzzles\Manager as PuzzlesManager;
 
 class Method extends SuperMethod
 {

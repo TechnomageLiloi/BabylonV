@@ -1,10 +1,10 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Puzzles;
+namespace Liloi\TARDIS\Domains\Puzzles;
 
-use Liloi\BabylonV\Domains\Manager as DomainManager;
-use Liloi\BabylonV\Domains\Maps\Manager as MapsManager;
-use Liloi\BabylonV\Exceptions\NotFoundException;
+use Liloi\TARDIS\Domains\Manager as DomainManager;
+use Liloi\TARDIS\Domains\Maps\Manager as MapsManager;
+use Liloi\TARDIS\Exceptions\NotFoundException;
 
 class Manager extends DomainManager
 {

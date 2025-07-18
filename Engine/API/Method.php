@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\BabylonV\API;
+namespace Liloi\TARDIS\API;
 
 abstract class Method
 {

@@ -1,18 +1,18 @@
 <?php
 
-namespace Liloi\BabylonV;
+namespace Liloi\TARDIS;
 
-use Liloi\BabylonV\API\Method;
-use Liloi\BabylonV\Domains\Manager as DomainsManager;
-use Liloi\BabylonV\Exceptions\NotFoundException;
+use Liloi\TARDIS\API\Method;
+use Liloi\TARDIS\Domains\Manager as DomainsManager;
+use Liloi\TARDIS\Exceptions\NotFoundException;
 use Liloi\Config\Pool;
 use Liloi\Config\Sparkle;
 use Rune\Application\General as GeneralApplication;
 
 /**
- * Babylon V Application
+ * TARDIS V Application
  *
- * @package Liloi\BabylonV
+ * @package Liloi\TARDIS
  */
 class Application extends GeneralApplication
 {
@@ -68,7 +68,7 @@ class Application extends GeneralApplication
             return $this->$name($parameters);
         }
 
-        $classMethod = 'Liloi\\BabylonV\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
+        $classMethod = 'Liloi\\TARDIS\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
 
         if(class_exists($classMethod))
         {

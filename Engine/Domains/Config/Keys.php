@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Config;
+namespace Liloi\TARDIS\Domains\Config;
 
 class Keys
 {

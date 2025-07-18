@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Puzzles;
+namespace Liloi\TARDIS\Domains\Puzzles;
 
 /**
  * Puzzle types.
  *
- * @package Liloi\BabylonV\Domains\Puzzles
+ * @package Liloi\TARDIS\Domains\Puzzles
  */
 class Types
 {

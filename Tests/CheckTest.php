@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\BabylonV;
+namespace Liloi\TARDIS;
 
 use PHPUnit\Framework\TestCase;
 

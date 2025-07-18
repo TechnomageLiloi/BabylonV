@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Config;
+namespace Liloi\TARDIS\Domains\Config;
 
 use Liloi\Tools\Entity as AbstractEntity;
 
 /**
  * Config entity.
  *
- * @package Liloi\BabylonV\Domains\Config
+ * @package Liloi\TARDIS\Domains\Config
  */
 class Entity extends AbstractEntity
 {

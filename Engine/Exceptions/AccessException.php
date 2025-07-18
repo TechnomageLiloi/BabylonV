@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\BabylonV\Exceptions;
+namespace Liloi\TARDIS\Exceptions;
 
 /**
  * Access denied exception.
  *
- * @package Liloi\BabylonV\Exceptions
+ * @package Liloi\TARDIS\Exceptions
  */
 class AccessException extends GeneralException
 {

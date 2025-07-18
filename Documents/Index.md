@@ -1,2 +1,2 @@
-# Welcome to BabylonV game manual
+# Welcome to TARDIS game manual
 

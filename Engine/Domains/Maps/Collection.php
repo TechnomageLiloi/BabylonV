@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Maps;
+namespace Liloi\TARDIS\Domains\Maps;
 
 use Liloi\Tools\Collection as AbstractCollection;
 
 /**
  * Collection of maps.
  *
- * @package Liloi\BabylonV\Domains\Maps
+ * @package Liloi\TARDIS\Domains\Maps
  */
 class Collection extends AbstractCollection
 {

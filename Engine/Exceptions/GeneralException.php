@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\BabylonV\Exceptions;
+namespace Liloi\TARDIS\Exceptions;
 
 use Liloi\Judex\ExtendedException;
 
@@ -16,7 +16,7 @@ class GeneralException extends ExtendedException
      *
      * @var string
      */
-    protected $defaultMessage = 'General Babylon V exception.';
+    protected $defaultMessage = 'General TARDIS exception.';
 
     /**
      * Exception code.

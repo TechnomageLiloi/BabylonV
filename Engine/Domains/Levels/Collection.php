@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Levels;
+namespace Liloi\TARDIS\Domains\Levels;
 
 use Liloi\Tools\Collection as AbstractCollection;
 
 /**
  * Collection of levels.
  *
- * @package Liloi\BabylonV\Domains\Levels
+ * @package Liloi\TARDIS\Domains\Levels
  */
 class Collection extends AbstractCollection
 {

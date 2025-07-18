@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\BabylonV\API\Levels\Show;
+namespace Liloi\TARDIS\API\Levels\Show;
 
-use Liloi\BabylonV\Domains\Levels\Manager;
-use Liloi\BabylonV\API\Method as AbstractMethod;
+use Liloi\TARDIS\Domains\Levels\Manager;
+use Liloi\TARDIS\API\Method as AbstractMethod;
 
 class Method extends AbstractMethod
 {

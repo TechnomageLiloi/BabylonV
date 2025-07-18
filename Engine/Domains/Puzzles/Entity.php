@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Puzzles;
+namespace Liloi\TARDIS\Domains\Puzzles;
 
 use Liloi\Stylo\Parser as StyloParser;
-use Liloi\BabylonV\Domains\Entity as AbstractEntity;
+use Liloi\TARDIS\Domains\Entity as AbstractEntity;
 
 /**
  * Puzzle entity.

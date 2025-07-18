@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Config;
+namespace Liloi\TARDIS\Domains\Config;
 
-use Liloi\BabylonV\Domains\Manager as DomainManager;
+use Liloi\TARDIS\Domains\Manager as DomainManager;
 
 /**
  * Config manager.
  *
- * @package Liloi\BabylonV\Domains\Config
+ * @package Liloi\TARDIS\Domains\Config
  */
 class Manager extends DomainManager
 {

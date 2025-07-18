@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\BabylonV\Exceptions;
+namespace Liloi\TARDIS\Exceptions;
 
 /**
  * Not found exception.
  *
- * @package Liloi\BabylonV\Exceptions
+ * @package Liloi\TARDIS\Exceptions
  */
 class NotFoundException extends GeneralException
 {

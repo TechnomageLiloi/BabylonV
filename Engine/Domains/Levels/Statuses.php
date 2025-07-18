@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\BabylonV\Domains\Levels;
+namespace Liloi\TARDIS\Domains\Levels;
 
 class Statuses
 {
