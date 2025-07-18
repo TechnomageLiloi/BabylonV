@@ -14,6 +14,13 @@ class Method extends SuperMethod
     {
         $entity = DiaryManager::loadCurrent();
 
+        if($entity === null)
+        {
+            return [
+                'render' => $this->render(__DIR__ . '/Create.tpl')
+            ];
+        }
+
         return [
             'render' => $this->render(__DIR__ . '/Template.tpl', [
                 'entity' => $entity

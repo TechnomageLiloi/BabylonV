@@ -1,4 +1,20 @@
 Requests.Maps = {
+    create: function ()
+    {
+        if(!confirm('Are you sure?'))
+        {
+            return;
+        }
+
+        API.request('Maps.Create', {
+            debug: false
+        }, function (data) {
+            Requests.Maps.show();
+        }, function () {
+
+        });
+    },
+
     show: function ()
     {
         API.request('Maps.Show', {

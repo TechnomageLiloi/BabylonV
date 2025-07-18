@@ -41,7 +41,7 @@ class Manager extends DomainManager
      * @param string $UID
      * @return Entity
      */
-    public static function load(string $UID): Entity
+    public static function load(string $UID): ?Entity
     {
         $name = self::getTableName();
 
@@ -52,7 +52,8 @@ class Manager extends DomainManager
 
         if(!$row)
         {
-            return self::create($UID);
+            return null;
+//            return self::create($UID);
         }
 
         return Entity::create($row);
@@ -63,7 +64,7 @@ class Manager extends DomainManager
      *
      * @return Entity
      */
-    public static function loadCurrent(): Entity
+    public static function loadCurrent(): ?Entity
     {
         return self::load(self::URLtoUID($_SERVER['REQUEST_URI']));
     }
