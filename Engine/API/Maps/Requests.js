@@ -21,6 +21,7 @@ Requests.Maps = {
             debug: false
         }, function (data) {
             $('#page').html(data.render);
+            TARDIS.Trigger.initialize();
         }, function () {
 
         });

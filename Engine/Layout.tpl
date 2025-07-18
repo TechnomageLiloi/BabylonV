@@ -22,7 +22,7 @@
             <a href="javascript:void(0)" class="butn" onclick="Requests.Puzzles.getCollection();">Puzzles</a>
         </div>
         <hr/>
-        <div id="page">
+        <div id="page" style="stylo">
             <script>Requests.Maps.show();</script>
         </div>
     </body>
