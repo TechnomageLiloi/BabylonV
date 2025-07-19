@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Config;
+namespace Liloi\BOYARD\Domains\Config;
 
-use Liloi\TARDIS\Domains\Manager as DomainManager;
+use Liloi\BOYARD\Domains\Manager as DomainManager;
 
 /**
  * Config manager.
  *
- * @package Liloi\TARDIS\Domains\Config
+ * @package Liloi\BOYARD\Domains\Config
  */
 class Manager extends DomainManager
 {

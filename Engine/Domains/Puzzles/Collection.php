@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Puzzles;
+namespace Liloi\BOYARD\Domains\Puzzles;
 
 use Liloi\Tools\Collection as AbstractCollection;
 
 /**
  * Collection of puzzles.
  *
- * @package Liloi\TARDIS\Domains\Puzzles
+ * @package Liloi\BOYARD\Domains\Puzzles
  */
 class Collection extends AbstractCollection
 {

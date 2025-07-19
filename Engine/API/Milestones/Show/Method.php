@@ -1,10 +1,10 @@
 <?php
 
-namespace Liloi\TARDIS\API\Milestones\Show;
+namespace Liloi\BOYARD\API\Milestones\Show;
 
-use Liloi\TARDIS\API\Method as SuperMethod;
-use Liloi\TARDIS\Domains\Milestones\Manager as MilestonesManager;
-//use Liloi\TARDIS\Domains\Tickets\Manager as TicketsManager;
+use Liloi\BOYARD\API\Method as SuperMethod;
+use Liloi\BOYARD\Domains\Milestones\Manager as MilestonesManager;
+//use Liloi\BOYARD\Domains\Tickets\Manager as TicketsManager;
 
 class Method extends SuperMethod
 {

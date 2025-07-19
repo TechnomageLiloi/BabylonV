@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\TARDIS\API\Puzzles\Collection;
+namespace Liloi\BOYARD\API\Puzzles\Collection;
 
-use Liloi\TARDIS\Domains\Puzzles\Manager as PuzzlesManager;
-use Liloi\TARDIS\API\Method as AbstractMethod;
+use Liloi\BOYARD\Domains\Puzzles\Manager as PuzzlesManager;
+use Liloi\BOYARD\API\Method as AbstractMethod;
 
 class Method extends AbstractMethod
 {

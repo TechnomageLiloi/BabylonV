@@ -1,10 +1,10 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Puzzles;
+namespace Liloi\BOYARD\Domains\Puzzles;
 
-use Liloi\TARDIS\Domains\Manager as DomainManager;
-use Liloi\TARDIS\Domains\Maps\Manager as MapsManager;
-use Liloi\TARDIS\Exceptions\NotFoundException;
+use Liloi\BOYARD\Domains\Manager as DomainManager;
+use Liloi\BOYARD\Domains\Maps\Manager as MapsManager;
+use Liloi\BOYARD\Exceptions\NotFoundException;
 
 class Manager extends DomainManager
 {

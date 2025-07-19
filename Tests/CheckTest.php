@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS;
+namespace Liloi\BOYARD;
 
 use PHPUnit\Framework\TestCase;
 

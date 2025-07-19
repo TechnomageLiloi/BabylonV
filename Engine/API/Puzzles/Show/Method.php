@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\TARDIS\API\Puzzles\Show;
+namespace Liloi\BOYARD\API\Puzzles\Show;
 
-use Liloi\TARDIS\API\Method as SuperMethod;
-use Liloi\TARDIS\Domains\Puzzles\Manager as PuzzlesManager;
+use Liloi\BOYARD\API\Method as SuperMethod;
+use Liloi\BOYARD\Domains\Puzzles\Manager as PuzzlesManager;
 
 class Method extends SuperMethod
 {

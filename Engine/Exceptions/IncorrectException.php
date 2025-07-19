@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\TARDIS\Exceptions;
+namespace Liloi\BOYARD\Exceptions;
 
 /**
  * Incorrect param exception.
  *
- * @package Liloi\TARDIS\Exceptions
+ * @package Liloi\BOYARD\Exceptions
  */
 class IncorrectException extends GeneralException
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS;
+namespace Liloi\BOYARD;
 
 use Liloi\Config\Pool;
 use Liloi\Config\Sparkle;
@@ -13,7 +13,7 @@ class Helper
 {
     public static function truncateDatabase(): void
     {
-        $prefix = 'tardis_';
+        $prefix = 'boyard_';
         $tables = [
             $prefix . 'road',
             $prefix . 'config',

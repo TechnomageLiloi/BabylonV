@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Milestones;
+namespace Liloi\BOYARD\Domains\Milestones;
 
-use Liloi\TARDIS\Domains\Manager as DomainManager;
-use Liloi\TARDIS\Domains\Maps\Manager as MapsManager;
+use Liloi\BOYARD\Domains\Manager as DomainManager;
+use Liloi\BOYARD\Domains\Maps\Manager as MapsManager;
 
 class Manager extends DomainManager
 {

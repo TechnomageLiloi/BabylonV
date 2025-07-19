@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\TARDIS\Exceptions;
+namespace Liloi\BOYARD\Exceptions;
 
 /**
  * Not implemented exception
  *
- * @package Liloi\TARDIS\Exceptions
+ * @package Liloi\BOYARD\Exceptions
  */
 class NotImplementedException extends GeneralException
 {

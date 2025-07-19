@@ -1,6 +1,6 @@
 <?php
 
-namespace Liloi\TARDIS\Exceptions;
+namespace Liloi\BOYARD\Exceptions;
 
 use Liloi\Judex\ExtendedException;
 
@@ -16,7 +16,7 @@ class GeneralException extends ExtendedException
      *
      * @var string
      */
-    protected $defaultMessage = 'General TARDIS exception.';
+    protected $defaultMessage = 'General BOYARD exception.';
 
     /**
      * Exception code.

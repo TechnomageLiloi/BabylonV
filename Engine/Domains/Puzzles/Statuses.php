@@ -1,11 +1,11 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Puzzles;
+namespace Liloi\BOYARD\Domains\Puzzles;
 
 /**
  * Puzzle statuses.
  *
- * @package Liloi\TARDIS\Domains\Puzzles
+ * @package Liloi\BOYARD\Domains\Puzzles
  */
 class Statuses
 {

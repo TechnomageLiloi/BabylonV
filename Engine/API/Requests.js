@@ -2,9 +2,9 @@ let Requests = {
 
 };
 
-let TARDIS = {};
+let BOYARD = {};
 
-TARDIS.Trigger = {
+BOYARD.Trigger = {
     initialize: function ()
     {
         $('.stylo-block').hide();

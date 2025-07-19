@@ -1,13 +1,13 @@
 <?php
 
-namespace Liloi\TARDIS\Domains\Config;
+namespace Liloi\BOYARD\Domains\Config;
 
 use Liloi\Tools\Entity as AbstractEntity;
 
 /**
  * Config entity.
  *
- * @package Liloi\TARDIS\Domains\Config
+ * @package Liloi\BOYARD\Domains\Config
  */
 class Entity extends AbstractEntity
 {

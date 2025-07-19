@@ -1,9 +1,9 @@
 <?php
 
-namespace Liloi\TARDIS\API\Milestones\Edit;
+namespace Liloi\BOYARD\API\Milestones\Edit;
 
-use Liloi\TARDIS\API\Method as SuperMethod;
-use Liloi\TARDIS\Domains\Milestones\Manager as DiaryManager;
+use Liloi\BOYARD\API\Method as SuperMethod;
+use Liloi\BOYARD\Domains\Milestones\Manager as DiaryManager;
 
 /**
  * Rune API: Interstate60.Application.Diary.Edit

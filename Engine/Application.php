@@ -1,18 +1,18 @@
 <?php
 
-namespace Liloi\TARDIS;
+namespace Liloi\BOYARD;
 
-use Liloi\TARDIS\API\Method;
-use Liloi\TARDIS\Domains\Manager as DomainsManager;
-use Liloi\TARDIS\Exceptions\NotFoundException;
+use Liloi\BOYARD\API\Method;
+use Liloi\BOYARD\Domains\Manager as DomainsManager;
+use Liloi\BOYARD\Exceptions\NotFoundException;
 use Liloi\Config\Pool;
 use Liloi\Config\Sparkle;
 use Rune\Application\General as GeneralApplication;
 
 /**
- * TARDIS V Application
+ * BOYARD V Application
  *
- * @package Liloi\TARDIS
+ * @package Liloi\BOYARD
  */
 class Application extends GeneralApplication
 {
@@ -68,7 +68,7 @@ class Application extends GeneralApplication
             return $this->$name($parameters);
         }
 
-        $classMethod = 'Liloi\\TARDIS\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
+        $classMethod = 'Liloi\\BOYARD\\API\\' . ucfirst(str_replace('.', '\\', $name)) . '\\Method';
 
         if(class_exists($classMethod))
         {

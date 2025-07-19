@@ -1,2 +1,2 @@
-# Welcome to TARDIS game manual
+# Welcome to BOYARD game manual
 
